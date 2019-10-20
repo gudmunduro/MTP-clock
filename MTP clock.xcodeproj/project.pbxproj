@@ -3,18 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		92761B93235CD67E0051E23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B92235CD67E0051E23B /* AppDelegate.swift */; };
 		92761B95235CD67E0051E23B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B94235CD67E0051E23B /* SceneDelegate.swift */; };
-		92761B97235CD67E0051E23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B96235CD67E0051E23B /* ContentView.swift */; };
+		92761B97235CD67E0051E23B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B96235CD67E0051E23B /* RootView.swift */; };
 		92761B99235CD67F0051E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92761B98235CD67F0051E23B /* Assets.xcassets */; };
 		92761B9C235CD67F0051E23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92761B9B235CD67F0051E23B /* Preview Assets.xcassets */; };
 		92761B9F235CD67F0051E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92761B9D235CD67F0051E23B /* LaunchScreen.storyboard */; };
 		92761BAA235CD6800051E23B /* MTP_clockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BA9235CD6800051E23B /* MTP_clockTests.swift */; };
 		92761BB5235CD6800051E23B /* MTP_clockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BB4235CD6800051E23B /* MTP_clockUITests.swift */; };
+		92761BC8235CD96A0051E23B /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BC7235CD96A0051E23B /* MainScreen.swift */; };
+		92761BCB235CDAE00051E23B /* ClockTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BCA235CDAE00051E23B /* ClockTab.swift */; };
+		92761BCD235CDB150051E23B /* SettingsTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BCC235CDB150051E23B /* SettingsTab.swift */; };
+		92761BCF235CDE860051E23B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BCE235CDE860051E23B /* AppState.swift */; };
+		92761BD1235CE20D0051E23B /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BD0235CE20D0051E23B /* SettingsRow.swift */; };
+		9281B0A7235D12C2000F9CC8 /* MTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A6235D12C2000F9CC8 /* MTP.swift */; };
+		9281B0A9235D153E000F9CC8 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A8235D153E000F9CC8 /* HistoryItem.swift */; };
+		92AFF1DB235CFFFD005454E2 /* MTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF1DA235CFFFD005454E2 /* MTPApi.swift */; };
+		9B65F7FB8B00AD0B5187DD7F /* Pods_MTP_clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97A2CAFB0D90543ACF3FDE1 /* Pods_MTP_clock.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		40D29C86407327FF3CDDDAAF /* Pods-MTP clock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTP clock.debug.xcconfig"; path = "Target Support Files/Pods-MTP clock/Pods-MTP clock.debug.xcconfig"; sourceTree = "<group>"; };
+		41C284BF6D6A4984D2524671 /* Pods-MTP clock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MTP clock.release.xcconfig"; path = "Target Support Files/Pods-MTP clock/Pods-MTP clock.release.xcconfig"; sourceTree = "<group>"; };
 		92761B8F235CD67E0051E23B /* MTP clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTP clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92761B92235CD67E0051E23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92761B94235CD67E0051E23B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92761B96235CD67E0051E23B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92761B96235CD67E0051E23B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		92761B98235CD67F0051E23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92761B9B235CD67F0051E23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		92761B9E235CD67F0051E23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,15 @@
 		92761BB0235CD6800051E23B /* MTP clockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTP clockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92761BB4235CD6800051E23B /* MTP_clockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP_clockUITests.swift; sourceTree = "<group>"; };
 		92761BB6235CD6800051E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92761BC7235CD96A0051E23B /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		92761BCA235CDAE00051E23B /* ClockTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockTab.swift; sourceTree = "<group>"; };
+		92761BCC235CDB150051E23B /* SettingsTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTab.swift; sourceTree = "<group>"; };
+		92761BCE235CDE860051E23B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		92761BD0235CE20D0051E23B /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
+		9281B0A6235D12C2000F9CC8 /* MTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP.swift; sourceTree = "<group>"; };
+		9281B0A8235D153E000F9CC8 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		92AFF1DA235CFFFD005454E2 /* MTPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPApi.swift; sourceTree = "<group>"; };
+		F97A2CAFB0D90543ACF3FDE1 /* Pods_MTP_clock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MTP_clock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B65F7FB8B00AD0B5187DD7F /* Pods_MTP_clock.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23A481EBE23A5BDF0697778B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F97A2CAFB0D90543ACF3FDE1 /* Pods_MTP_clock.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92761B86235CD67E0051E23B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +112,8 @@
 				92761BA8235CD6800051E23B /* MTP clockTests */,
 				92761BB3235CD6800051E23B /* MTP clockUITests */,
 				92761B90235CD67E0051E23B /* Products */,
+				B44F728BF44BECE2840FAA04 /* Pods */,
+				23A481EBE23A5BDF0697778B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +130,11 @@
 		92761B91235CD67E0051E23B /* MTP clock */ = {
 			isa = PBXGroup;
 			children = (
-				92761B92235CD67E0051E23B /* AppDelegate.swift */,
-				92761B94235CD67E0051E23B /* SceneDelegate.swift */,
-				92761B96235CD67E0051E23B /* ContentView.swift */,
+				92AFF1D9235CFFD7005454E2 /* Utilities */,
+				92761BC5235CD8B30051E23B /* Core */,
+				92761BC4235CD88D0051E23B /* Models */,
+				92761BC3235CD87F0051E23B /* Components */,
+				92761BC2235CD8590051E23B /* Screens */,
 				92761B98235CD67F0051E23B /* Assets.xcassets */,
 				92761B9D235CD67F0051E23B /* LaunchScreen.storyboard */,
 				92761BA0235CD67F0051E23B /* Info.plist */,
@@ -136,6 +169,85 @@
 			path = "MTP clockUITests";
 			sourceTree = "<group>";
 		};
+		92761BC2235CD8590051E23B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				92761BC9235CD9BB0051E23B /* Tabs */,
+				92761B96235CD67E0051E23B /* RootView.swift */,
+				92761BC7235CD96A0051E23B /* MainScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		92761BC3235CD87F0051E23B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				92761BD0235CE20D0051E23B /* SettingsRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		92761BC4235CD88D0051E23B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9281B0AB235D1575000F9CC8 /* API */,
+				9281B0AA235D1557000F9CC8 /* Observable */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92761BC5235CD8B30051E23B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				92761B94235CD67E0051E23B /* SceneDelegate.swift */,
+				92761B92235CD67E0051E23B /* AppDelegate.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		92761BC9235CD9BB0051E23B /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				92761BCA235CDAE00051E23B /* ClockTab.swift */,
+				92761BCC235CDB150051E23B /* SettingsTab.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		9281B0AA235D1557000F9CC8 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				92761BCE235CDE860051E23B /* AppState.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		9281B0AB235D1575000F9CC8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9281B0A6235D12C2000F9CC8 /* MTP.swift */,
+				9281B0A8235D153E000F9CC8 /* HistoryItem.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		92AFF1D9235CFFD7005454E2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				92AFF1DA235CFFFD005454E2 /* MTPApi.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B44F728BF44BECE2840FAA04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40D29C86407327FF3CDDDAAF /* Pods-MTP clock.debug.xcconfig */,
+				41C284BF6D6A4984D2524671 /* Pods-MTP clock.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +255,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92761BB9235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clock" */;
 			buildPhases = (
+				E49921F54B2370ED437E056E /* [CP] Check Pods Manifest.lock */,
 				92761B8B235CD67E0051E23B /* Sources */,
 				92761B8C235CD67E0051E23B /* Frameworks */,
 				92761B8D235CD67E0051E23B /* Resources */,
+				5A786BF8EAE4E1A357F39499 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -262,14 +376,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A786BF8EAE4E1A357F39499 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTP clock/Pods-MTP clock-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MTP clock/Pods-MTP clock-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MTP clock/Pods-MTP clock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E49921F54B2370ED437E056E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MTP clock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92761B8B235CD67E0051E23B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92761BCD235CDB150051E23B /* SettingsTab.swift in Sources */,
+				92AFF1DB235CFFFD005454E2 /* MTPApi.swift in Sources */,
+				92761BC8235CD96A0051E23B /* MainScreen.swift in Sources */,
+				9281B0A9235D153E000F9CC8 /* HistoryItem.swift in Sources */,
+				92761BCF235CDE860051E23B /* AppState.swift in Sources */,
 				92761B93235CD67E0051E23B /* AppDelegate.swift in Sources */,
+				9281B0A7235D12C2000F9CC8 /* MTP.swift in Sources */,
 				92761B95235CD67E0051E23B /* SceneDelegate.swift in Sources */,
-				92761B97235CD67E0051E23B /* ContentView.swift in Sources */,
+				92761BD1235CE20D0051E23B /* SettingsRow.swift in Sources */,
+				92761B97235CD67E0051E23B /* RootView.swift in Sources */,
+				92761BCB235CDAE00051E23B /* ClockTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +596,7 @@
 		};
 		92761BBA235CD6800051E23B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D29C86407327FF3CDDDAAF /* Pods-MTP clock.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -451,6 +616,7 @@
 		};
 		92761BBB235CD6800051E23B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41C284BF6D6A4984D2524671 /* Pods-MTP clock.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

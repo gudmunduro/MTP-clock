@@ -1,0 +1,6 @@
+framework module Pods_MTP_clock {
+  umbrella header "Pods-MTP clock-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MTP clock/Pods-MTP clock-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework
