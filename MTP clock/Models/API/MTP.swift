@@ -13,8 +13,3 @@ struct ClockInOutParameters: Encodable {
     let SSN: String
     let unitId: Int
 }
-
-// MARK: Errors
-enum MTPApiError: Error {
-    case getPostIDFailed
-}

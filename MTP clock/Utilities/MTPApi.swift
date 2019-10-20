@@ -11,12 +11,12 @@ import SwiftSoup
 
 final class MTPApi {
     
-    static fileprivate func getPostID(from htmlText: String) throws -> String {
+    static fileprivate func getPostID(from htmlText: String) -> String? {
         // Parses the html document and returns the postID value
-        let doc = try SwiftSoup.parse(htmlText)
-        guard let postIDElement = try? doc.select("#postId").first(),
+        guard let doc = try? SwiftSoup.parse(htmlText),
+            let postIDElement = try? doc.select("#postId").first(),
             let postID = try? postIDElement.attr("value") else {
-                throw MTPApiError.getPostIDFailed
+                return nil
         }
         
         return postID
@@ -26,7 +26,8 @@ final class MTPApi {
         AF.request("https://register.husa.mytimeplan.com")
         .responseString { response in
             guard let responseUnwrapped = response.value,
-                let postID = try? MTPApi.getPostID(from: responseUnwrapped) else {
+                let postID = MTPApi.getPostID(from: responseUnwrapped) else {
+                    debugPrint("Failed to load dropID")
                     return
             }
             onLoad(postID)
