@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		92761B93235CD67E0051E23B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B92235CD67E0051E23B /* AppDelegate.swift */; };
+		92761B95235CD67E0051E23B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B94235CD67E0051E23B /* SceneDelegate.swift */; };
+		92761B97235CD67E0051E23B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761B96235CD67E0051E23B /* ContentView.swift */; };
+		92761B99235CD67F0051E23B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92761B98235CD67F0051E23B /* Assets.xcassets */; };
+		92761B9C235CD67F0051E23B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92761B9B235CD67F0051E23B /* Preview Assets.xcassets */; };
+		92761B9F235CD67F0051E23B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92761B9D235CD67F0051E23B /* LaunchScreen.storyboard */; };
+		92761BAA235CD6800051E23B /* MTP_clockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BA9235CD6800051E23B /* MTP_clockTests.swift */; };
+		92761BB5235CD6800051E23B /* MTP_clockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BB4235CD6800051E23B /* MTP_clockUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92761BA6235CD6800051E23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92761B87235CD67E0051E23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92761B8E235CD67E0051E23B;
+			remoteInfo = "MTP clock";
+		};
+		92761BB1235CD6800051E23B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92761B87235CD67E0051E23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92761B8E235CD67E0051E23B;
+			remoteInfo = "MTP clock";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		92761B8F235CD67E0051E23B /* MTP clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MTP clock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92761B92235CD67E0051E23B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92761B94235CD67E0051E23B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		92761B96235CD67E0051E23B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		92761B98235CD67F0051E23B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92761B9B235CD67F0051E23B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		92761B9E235CD67F0051E23B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		92761BA0235CD67F0051E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92761BA5235CD6800051E23B /* MTP clockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTP clockTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92761BA9235CD6800051E23B /* MTP_clockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP_clockTests.swift; sourceTree = "<group>"; };
+		92761BAB235CD6800051E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92761BB0235CD6800051E23B /* MTP clockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MTP clockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92761BB4235CD6800051E23B /* MTP_clockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP_clockUITests.swift; sourceTree = "<group>"; };
+		92761BB6235CD6800051E23B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92761B8C235CD67E0051E23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BA2235CD6800051E23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BAD235CD6800051E23B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		92761B86235CD67E0051E23B = {
+			isa = PBXGroup;
+			children = (
+				92761B91235CD67E0051E23B /* MTP clock */,
+				92761BA8235CD6800051E23B /* MTP clockTests */,
+				92761BB3235CD6800051E23B /* MTP clockUITests */,
+				92761B90235CD67E0051E23B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		92761B90235CD67E0051E23B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92761B8F235CD67E0051E23B /* MTP clock.app */,
+				92761BA5235CD6800051E23B /* MTP clockTests.xctest */,
+				92761BB0235CD6800051E23B /* MTP clockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92761B91235CD67E0051E23B /* MTP clock */ = {
+			isa = PBXGroup;
+			children = (
+				92761B92235CD67E0051E23B /* AppDelegate.swift */,
+				92761B94235CD67E0051E23B /* SceneDelegate.swift */,
+				92761B96235CD67E0051E23B /* ContentView.swift */,
+				92761B98235CD67F0051E23B /* Assets.xcassets */,
+				92761B9D235CD67F0051E23B /* LaunchScreen.storyboard */,
+				92761BA0235CD67F0051E23B /* Info.plist */,
+				92761B9A235CD67F0051E23B /* Preview Content */,
+			);
+			path = "MTP clock";
+			sourceTree = "<group>";
+		};
+		92761B9A235CD67F0051E23B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				92761B9B235CD67F0051E23B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		92761BA8235CD6800051E23B /* MTP clockTests */ = {
+			isa = PBXGroup;
+			children = (
+				92761BA9235CD6800051E23B /* MTP_clockTests.swift */,
+				92761BAB235CD6800051E23B /* Info.plist */,
+			);
+			path = "MTP clockTests";
+			sourceTree = "<group>";
+		};
+		92761BB3235CD6800051E23B /* MTP clockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				92761BB4235CD6800051E23B /* MTP_clockUITests.swift */,
+				92761BB6235CD6800051E23B /* Info.plist */,
+			);
+			path = "MTP clockUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92761B8E235CD67E0051E23B /* MTP clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92761BB9235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clock" */;
+			buildPhases = (
+				92761B8B235CD67E0051E23B /* Sources */,
+				92761B8C235CD67E0051E23B /* Frameworks */,
+				92761B8D235CD67E0051E23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTP clock";
+			productName = "MTP clock";
+			productReference = 92761B8F235CD67E0051E23B /* MTP clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92761BA4235CD6800051E23B /* MTP clockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92761BBC235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clockTests" */;
+			buildPhases = (
+				92761BA1235CD6800051E23B /* Sources */,
+				92761BA2235CD6800051E23B /* Frameworks */,
+				92761BA3235CD6800051E23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92761BA7235CD6800051E23B /* PBXTargetDependency */,
+			);
+			name = "MTP clockTests";
+			productName = "MTP clockTests";
+			productReference = 92761BA5235CD6800051E23B /* MTP clockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		92761BAF235CD6800051E23B /* MTP clockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92761BBF235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clockUITests" */;
+			buildPhases = (
+				92761BAC235CD6800051E23B /* Sources */,
+				92761BAD235CD6800051E23B /* Frameworks */,
+				92761BAE235CD6800051E23B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92761BB2235CD6800051E23B /* PBXTargetDependency */,
+			);
+			name = "MTP clockUITests";
+			productName = "MTP clockUITests";
+			productReference = 92761BB0235CD6800051E23B /* MTP clockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92761B87235CD67E0051E23B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Guðmundur Halldórsson";
+				TargetAttributes = {
+					92761B8E235CD67E0051E23B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					92761BA4235CD6800051E23B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92761B8E235CD67E0051E23B;
+					};
+					92761BAF235CD6800051E23B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 92761B8E235CD67E0051E23B;
+					};
+				};
+			};
+			buildConfigurationList = 92761B8A235CD67E0051E23B /* Build configuration list for PBXProject "MTP clock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92761B86235CD67E0051E23B;
+			productRefGroup = 92761B90235CD67E0051E23B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92761B8E235CD67E0051E23B /* MTP clock */,
+				92761BA4235CD6800051E23B /* MTP clockTests */,
+				92761BAF235CD6800051E23B /* MTP clockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92761B8D235CD67E0051E23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92761B9F235CD67F0051E23B /* LaunchScreen.storyboard in Resources */,
+				92761B9C235CD67F0051E23B /* Preview Assets.xcassets in Resources */,
+				92761B99235CD67F0051E23B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BA3235CD6800051E23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BAE235CD6800051E23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92761B8B235CD67E0051E23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92761B93235CD67E0051E23B /* AppDelegate.swift in Sources */,
+				92761B95235CD67E0051E23B /* SceneDelegate.swift in Sources */,
+				92761B97235CD67E0051E23B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BA1235CD6800051E23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92761BAA235CD6800051E23B /* MTP_clockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92761BAC235CD6800051E23B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92761BB5235CD6800051E23B /* MTP_clockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92761BA7235CD6800051E23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92761B8E235CD67E0051E23B /* MTP clock */;
+			targetProxy = 92761BA6235CD6800051E23B /* PBXContainerItemProxy */;
+		};
+		92761BB2235CD6800051E23B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92761B8E235CD67E0051E23B /* MTP clock */;
+			targetProxy = 92761BB1235CD6800051E23B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92761B9D235CD67F0051E23B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92761B9E235CD67F0051E23B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92761BB7235CD6800051E23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92761BB8235CD6800051E23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92761BBA235CD6800051E23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MTP clock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MTP clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92761BBB235CD6800051E23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MTP clock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "MTP clock/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clock";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92761BBD235CD6800051E23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTP clockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTP clock.app/MTP clock";
+			};
+			name = Debug;
+		};
+		92761BBE235CD6800051E23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTP clockTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MTP clock.app/MTP clock";
+			};
+			name = Release;
+		};
+		92761BC0235CD6800051E23B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTP clockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTP clock";
+			};
+			name = Debug;
+		};
+		92761BC1235CD6800051E23B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MTP clockUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gudmundur.MTP-clockUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MTP clock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92761B8A235CD67E0051E23B /* Build configuration list for PBXProject "MTP clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92761BB7235CD6800051E23B /* Debug */,
+				92761BB8235CD6800051E23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92761BB9235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92761BBA235CD6800051E23B /* Debug */,
+				92761BBB235CD6800051E23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92761BBC235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92761BBD235CD6800051E23B /* Debug */,
+				92761BBE235CD6800051E23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92761BBF235CD6800051E23B /* Build configuration list for PBXNativeTarget "MTP clockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92761BC0235CD6800051E23B /* Debug */,
+				92761BC1235CD6800051E23B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92761B87235CD67E0051E23B /* Project object */;
+}
