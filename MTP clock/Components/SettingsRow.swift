@@ -21,7 +21,7 @@ struct SettingRow: View {
                 Text(title)
                 Spacer()
                 Text(value ?? "")
-                .foregroundColor(Color.gray)
+                    .foregroundColor(Color.gray)
             }
         }
     }

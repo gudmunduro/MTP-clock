@@ -20,19 +20,27 @@ class AppState: ObservableObject {
     }
     
     func initialSetup() {
+        loadLocalData()
         loadPostID()
     }
 }
 
 // MARK: Modifiers
 extension AppState {
-    func setSSN(to SSN: String) {
+    func setSSN(to SSN: String?) {
         self.SSN = SSN
+        self.saveLocalData() // Might cause race conditions
     }
 }
 
 // MARK: Async modifiers
 extension AppState {
+    func loadLocalData() {
+        LocalData.load { localData in
+            self.SSN = localData.SSN
+        }
+    }
+    
     func loadPostID() {
         MTPApi.loadPostID { postID in
             self.postID = postID
@@ -47,5 +55,12 @@ extension AppState {
         MTPApi.clockInOut(postID: postIDUnwrapped, SSN: SSNUnwrapped) { historyItems in
             self.historyItems = historyItems
         }
+    }
+}
+
+// MARK: Other functions
+extension AppState {
+    func saveLocalData() {
+        LocalData(SSN: SSN).save()
     }
 }

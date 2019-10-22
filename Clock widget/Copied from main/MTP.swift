@@ -8,7 +8,7 @@
 
 import Alamofire
 
-struct ClockInOutParameters: Encodable {
+struct ClockInOutParameters: Codable {
     let postId: String
     let SSN: String
     let unitId: Int

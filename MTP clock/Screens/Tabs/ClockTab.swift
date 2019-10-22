@@ -10,13 +10,26 @@ import SwiftUI
 
 struct ClockTab: View {
     @EnvironmentObject var state: AppState
+
     var body: some View {
-        Button(action: didPressClockInOutButton) {
-            Text("Stimpla inn/út")
-            .padding()
-            .background(Color.red)
-            .foregroundColor(Color.white)
-            .cornerRadius(5)
+        VStack {
+            Image(systemName: "person.circle")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .padding(.top, 50)
+            Text(state.SSN ?? "Kennitala ekki valin")
+                .padding()
+            Button(action: didPressClockInOutButton) {
+                Text("Stimpla inn/út")
+                .padding()
+                .background(Color.blue)
+                .foregroundColor(Color.white)
+                .cornerRadius(5)
+                .frame(width: 200.0)
+            }.disabled(state.SSN == nil)
+            Text(state.historyItems.first?.description ?? "")
+                .padding()
+            Spacer()
         }
     }
 }

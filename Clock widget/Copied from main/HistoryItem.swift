@@ -13,3 +13,10 @@ struct HistoryItem {
     let name: String
     let state: String
 }
+
+// MARK: String interpolation
+extension HistoryItem: CustomStringConvertible {
+    var description: String {
+        return "\(time) \(name) \(state.uppercased())"
+    }
+}

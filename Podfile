@@ -5,3 +5,8 @@ target 'MTP clock' do
    pod 'Alamofire', '~> 5.0.0-rc.2'
    pod 'SwiftSoup'
 end
+
+target 'Clock widget' do
+   pod 'Alamofire', '~> 5.0.0-rc.2'
+   pod 'SwiftSoup'
+end
