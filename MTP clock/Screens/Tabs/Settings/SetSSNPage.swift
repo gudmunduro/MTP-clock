@@ -25,7 +25,7 @@ struct SetSSNPage: View {
 // MARK: Events
 extension SetSSNPage {
     func onSSNTextFieldEditingChanged(_ changed: Bool) {
-        state.setSSN(to: SSNText.isEmpty ? nil : SSNText) // Set to nil if the text field is empty
+        state.saveSSN(to: SSNText.isEmpty ? nil : SSNText) // Set to nil if the text field is empty
     }
 }
 

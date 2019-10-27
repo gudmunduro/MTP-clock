@@ -15,22 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9HA-Av-Nrn">
-                                <rect key="frame" x="111" y="3" width="98" height="30"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="Stimpla inn/út">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dyF-C4-YI4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <connections>
-                                    <action selector="clockInOutButtonOnTouchUpInside:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ale-PM-eP1"/>
+                                    <segue destination="cXv-Sn-B59" kind="embed" destinationCreationSelector="addSwiftUIViewSegueAction:" id="mN4-73-VDP"/>
                                 </connections>
-                            </button>
+                            </containerView>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="9HA-Av-Nrn" firstAttribute="centerY" secondItem="ssy-KU-ocm" secondAttribute="centerY" id="CIQ-FY-Uah"/>
-                            <constraint firstItem="9HA-Av-Nrn" firstAttribute="centerX" secondItem="ssy-KU-ocm" secondAttribute="centerX" id="UQE-KH-4rp"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ssy-KU-ocm"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -40,6 +32,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="121.54017857142857"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="YVx-4v-dGw">
+            <objects>
+                <hostingController id="cXv-Sn-B59" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0X-SS-J59" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="121"/>
         </scene>
     </scenes>
 </document>

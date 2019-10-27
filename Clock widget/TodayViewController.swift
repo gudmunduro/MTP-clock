@@ -7,26 +7,27 @@
 //
 
 import UIKit
+import SwiftUI
 import NotificationCenter
 
-class TodayViewController: UIViewController, NCWidgetProviding {
-    var postID: String?
+class TodayViewController: UIViewController {
     var SSN: String?
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        loadLocalData()
-        loadPostID()
+        
+        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
     }
-    @IBAction func clockInOutButtonOnTouchUpInside(_ sender: Any) {
-        guard let postIDUnwrapped = postID, let SSNUnwrapped = SSN else {
-            debugPrint("postID and SSN cannot be nil")
-            return
-        }
-        MTPApi.clockInOut(postID: postIDUnwrapped, SSN: SSNUnwrapped) { _ in
-            debugPrint("Clock in out done")
-        }
+    
+    @IBSegueAction func addSwiftUIViewSegueAction(_ coder: NSCoder) -> UIViewController? {
+        let state = AppState()
+        state.initialSetup()
+
+        let hostingController = UIHostingController(coder: coder, rootView: TodayView().environmentObject(state))
+        hostingController?.view.backgroundColor = .clear
+
+        return hostingController
     }
     
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
@@ -41,17 +42,12 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
 }
 
-// MARK: Data functions
-extension TodayViewController {
-    private func loadLocalData() {
-        LocalData.load { localData in
-            self.SSN = localData.SSN
-        }
-    }
-    
-    private func loadPostID() {
-        MTPApi.loadPostID { postID in
-            self.postID = postID
+extension TodayViewController: NCWidgetProviding {
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        if activeDisplayMode == .expanded {
+            preferredContentSize = CGSize(width: 0, height: 290)
+        } else {
+            preferredContentSize = maxSize
         }
     }
 }
