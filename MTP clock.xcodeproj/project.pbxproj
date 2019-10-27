@@ -11,11 +11,8 @@
 		920DC252235E8FE600DEC06D /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920DC251235E8FE600DEC06D /* TodayViewController.swift */; };
 		920DC255235E8FE600DEC06D /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 920DC253235E8FE600DEC06D /* MainInterface.storyboard */; };
 		920DC259235E8FE600DEC06D /* MTP Clock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 920DC24D235E8FE600DEC06D /* MTP Clock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		925214AA236515EF0044175D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214A9236515EF0044175D /* String.swift */; };
 		925214AD2365161E0044175D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214AC2365161E0044175D /* String.swift */; };
-		925214B0236516FC0044175D /* StringError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214AF236516FC0044175D /* StringError.swift */; };
 		925214B32365195A0044175D /* StringError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214B22365195A0044175D /* StringError.swift */; };
-		9254C610236136F10097A624 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9254C60F236136F10097A624 /* AppState.swift */; };
 		925B3EA72361269300BD99F9 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B3EA62361269300BD99F9 /* TodayView.swift */; };
 		925B3EAA236130B900BD99F9 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B3EA9236130B900BD99F9 /* MainView.swift */; };
 		925B3EAC236130C500BD99F9 /* SetSSNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925B3EAB236130C500BD99F9 /* SetSSNView.swift */; };
@@ -37,11 +34,14 @@
 		92761BD1235CE20D0051E23B /* SettingsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BD0235CE20D0051E23B /* SettingsRow.swift */; };
 		9281B0A7235D12C2000F9CC8 /* MTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A6235D12C2000F9CC8 /* MTP.swift */; };
 		9281B0A9235D153E000F9CC8 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A8235D153E000F9CC8 /* HistoryItem.swift */; };
+		9298177823652974005E0EE5 /* StringError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214B22365195A0044175D /* StringError.swift */; };
+		9298177923652978005E0EE5 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925214AC2365161E0044175D /* String.swift */; };
+		9298177A2365297D005E0EE5 /* MTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF1DA235CFFFD005454E2 /* MTPApi.swift */; };
+		9298177B23652981005E0EE5 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 925CDE1B235E75F600D48F9E /* LocalData.swift */; };
+		9298177C23652988005E0EE5 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A8235D153E000F9CC8 /* HistoryItem.swift */; };
+		9298177D23652992005E0EE5 /* MTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9281B0A6235D12C2000F9CC8 /* MTP.swift */; };
+		9298177E23652995005E0EE5 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92761BCE235CDE860051E23B /* AppState.swift */; };
 		929E17BEE4969FA89EBE5774 /* Pods_Clock_widget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75AA4ECBA9EEAEB9B3332D4D /* Pods_Clock_widget.framework */; };
-		92A13726235E98070014504F /* MTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A13725235E98070014504F /* MTPApi.swift */; };
-		92A13729235E98340014504F /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A13728235E98340014504F /* LocalData.swift */; };
-		92A1372B235E984C0014504F /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1372A235E984C0014504F /* HistoryItem.swift */; };
-		92A1372D235E98720014504F /* MTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A1372C235E98720014504F /* MTP.swift */; };
 		92AFF1DB235CFFFD005454E2 /* MTPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AFF1DA235CFFFD005454E2 /* MTPApi.swift */; };
 		9B65F7FB8B00AD0B5187DD7F /* Pods_MTP_clock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F97A2CAFB0D90543ACF3FDE1 /* Pods_MTP_clock.framework */; };
 /* End PBXBuildFile section */
@@ -93,11 +93,8 @@
 		920DC251235E8FE600DEC06D /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		920DC254235E8FE600DEC06D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		920DC256235E8FE600DEC06D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		925214A9236515EF0044175D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		925214AC2365161E0044175D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		925214AF236516FC0044175D /* StringError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringError.swift; sourceTree = "<group>"; };
 		925214B22365195A0044175D /* StringError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringError.swift; sourceTree = "<group>"; };
-		9254C60F236136F10097A624 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		925B3EA62361269300BD99F9 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		925B3EA9236130B900BD99F9 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		925B3EAB236130C500BD99F9 /* SetSSNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSSNView.swift; sourceTree = "<group>"; };
@@ -124,10 +121,6 @@
 		92761BD0235CE20D0051E23B /* SettingsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRow.swift; sourceTree = "<group>"; };
 		9281B0A6235D12C2000F9CC8 /* MTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP.swift; sourceTree = "<group>"; };
 		9281B0A8235D153E000F9CC8 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
-		92A13725235E98070014504F /* MTPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPApi.swift; sourceTree = "<group>"; };
-		92A13728235E98340014504F /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
-		92A1372A235E984C0014504F /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
-		92A1372C235E98720014504F /* MTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTP.swift; sourceTree = "<group>"; };
 		92AFF1DA235CFFFD005454E2 /* MTPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPApi.swift; sourceTree = "<group>"; };
 		A10AC70D46D497B124AF8763 /* Pods-Clock widget.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clock widget.release.xcconfig"; path = "Target Support Files/Pods-Clock widget/Pods-Clock widget.release.xcconfig"; sourceTree = "<group>"; };
 		F32160290F1E6410A05216B7 /* Pods-Clock widget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Clock widget.debug.xcconfig"; path = "Target Support Files/Pods-Clock widget/Pods-Clock widget.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,24 +176,12 @@
 		920DC250235E8FE600DEC06D /* Clock widget */ = {
 			isa = PBXGroup;
 			children = (
-				925214AE236516EF0044175D /* Errors */,
-				925214A8236515DF0044175D /* Extensions */,
-				9254C60E236136DD0097A624 /* Models */,
 				925B3EA8236130A900BD99F9 /* Views */,
-				92A13727235E98170014504F /* Utilities */,
 				920DC251235E8FE600DEC06D /* TodayViewController.swift */,
 				920DC253235E8FE600DEC06D /* MainInterface.storyboard */,
 				920DC256235E8FE600DEC06D /* Info.plist */,
 			);
 			path = "Clock widget";
-			sourceTree = "<group>";
-		};
-		925214A8236515DF0044175D /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				925214A9236515EF0044175D /* String.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		925214AB236516080044175D /* Extensions */ = {
@@ -211,31 +192,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		925214AE236516EF0044175D /* Errors */ = {
-			isa = PBXGroup;
-			children = (
-				925214AF236516FC0044175D /* StringError.swift */,
-			);
-			path = Errors;
-			sourceTree = "<group>";
-		};
 		925214B1236519480044175D /* Errors */ = {
 			isa = PBXGroup;
 			children = (
 				925214B22365195A0044175D /* StringError.swift */,
 			);
 			path = Errors;
-			sourceTree = "<group>";
-		};
-		9254C60E236136DD0097A624 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				92A1372C235E98720014504F /* MTP.swift */,
-				92A1372A235E984C0014504F /* HistoryItem.swift */,
-				92A13728235E98340014504F /* LocalData.swift */,
-				9254C60F236136F10097A624 /* AppState.swift */,
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		925B3EA8236130A900BD99F9 /* Views */ = {
@@ -378,14 +340,6 @@
 				92761BCE235CDE860051E23B /* AppState.swift */,
 			);
 			path = Observable;
-			sourceTree = "<group>";
-		};
-		92A13727235E98170014504F /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				92A13725235E98070014504F /* MTPApi.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		92AFF1D9235CFFD7005454E2 /* Utilities */ = {
@@ -642,15 +596,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A1372D235E98720014504F /* MTP.swift in Sources */,
+				9298177923652978005E0EE5 /* String.swift in Sources */,
+				9298177D23652992005E0EE5 /* MTP.swift in Sources */,
+				9298177E23652995005E0EE5 /* AppState.swift in Sources */,
+				9298177A2365297D005E0EE5 /* MTPApi.swift in Sources */,
 				925B3EAA236130B900BD99F9 /* MainView.swift in Sources */,
-				925214AA236515EF0044175D /* String.swift in Sources */,
-				92A13726235E98070014504F /* MTPApi.swift in Sources */,
-				9254C610236136F10097A624 /* AppState.swift in Sources */,
-				92A1372B235E984C0014504F /* HistoryItem.swift in Sources */,
-				92A13729235E98340014504F /* LocalData.swift in Sources */,
-				925214B0236516FC0044175D /* StringError.swift in Sources */,
+				9298177B23652981005E0EE5 /* LocalData.swift in Sources */,
 				925B3EA72361269300BD99F9 /* TodayView.swift in Sources */,
+				9298177823652974005E0EE5 /* StringError.swift in Sources */,
+				9298177C23652988005E0EE5 /* HistoryItem.swift in Sources */,
 				925B3EAC236130C500BD99F9 /* SetSSNView.swift in Sources */,
 				920DC252235E8FE600DEC06D /* TodayViewController.swift in Sources */,
 			);
