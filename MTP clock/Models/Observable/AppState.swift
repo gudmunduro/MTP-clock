@@ -49,7 +49,7 @@ extension AppState {
     }
     
     func loadPostID() {
-        // Does not seem to matter what the postID is, so it's better to just genrate it locally
+        // Does not seem to matter what the postID is, so it's better to just generate it locally
         //
         // MTPApi.loadPostID { postID in
         //    self.setPostID(to: postID)
