@@ -38,7 +38,7 @@ final class MTPApi {
     }
     
     static func generatePostID() -> String {
-        return String.random(length: 10)
+        return String.random(length: 32)
     }
     
     static func clockInOut(postID: String, SSN: String, onLoad: ([HistoryItem]) -> Void) {
