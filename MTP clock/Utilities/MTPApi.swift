@@ -45,7 +45,7 @@ final class MTPApi {
         // Clock in or out depending on current state, returns an array with result of previous requests as well as the current one
         let parameters = ClockInOutParameters(postId: postID, SSN: SSN, unitId: -1)
         
-        AF.request("https://register.husa.mytimeplan.com/register_ajax.php", parameters: parameters, encoder: JSONParameterEncoder.default)
+        AF.request("https://register.husa.mytimeplan.com/register_ajax.php", parameters: parameters, encoder: URLEncodedFormParameterEncoder.default)
         .responseJSON { response in
             do {
                 guard let jsonObject = response.value as? [String: String],

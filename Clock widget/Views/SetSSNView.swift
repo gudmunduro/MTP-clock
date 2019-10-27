@@ -17,6 +17,7 @@ struct SetSSNView: View {
             Text(SSNTextFieldText)
                 .padding(.bottom, 30)
             VStack {
+                // Numpad 1-9
                 ForEach(0..<3, id: \.self) { row in
                     HStack {
                         ForEach(1...3, id: \.self) { column in
@@ -31,6 +32,7 @@ struct SetSSNView: View {
                         }
                     }
                 }
+                // Bottom row
                 HStack {
                     Button(action: onNumpadBackspaceButtonPress) {
                         Image(systemName: "delete.left")
