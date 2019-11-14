@@ -49,9 +49,16 @@ final class MTPApi {
         .responseJSON { response in
             do {
                 guard let jsonObject = response.value as? [String: String],
-                        let historyProperty = jsonObject["history"] else {
+                        var historyProperty = jsonObject["history"] else {
                     throw StringError.unwrapFailed
                 }
+                
+                // Chnage table to div and p because SwiftSoup fails to parse tables for some reason
+                // And remove all backward slashes
+                historyProperty = historyProperty.replacingOccurrences(of: #"\"#, with: "", options: .literal, range: nil)
+                historyProperty = historyProperty.replacingOccurrences(of: "tr", with: "div", options: .literal, range: nil)
+                historyProperty = historyProperty.replacingOccurrences(of: "td", with: "p", options: .literal, range: nil)
+                
                 let doc = try SwiftSoup.parse(historyProperty)
                 let timeElements = try doc.select(".time")
                 let nameElements = try doc.select(".name")

@@ -13,12 +13,10 @@ struct SetSSNPage: View {
     @State var SSNText: String
     
     var body: some View {
-        NavigationView {
-            List {
-                TextField("Kennitala", text: $SSNText, onEditingChanged: onSSNTextFieldEditingChanged)
-            }
-            .navigationBarTitle("Kennitala")
+        List {
+            TextField("Kennitala", text: $SSNText, onEditingChanged: onSSNTextFieldEditingChanged)
         }
+        .navigationBarTitle("Kennitala")
     }
 }
 
