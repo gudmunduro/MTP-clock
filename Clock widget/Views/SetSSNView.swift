@@ -23,7 +23,7 @@ struct SetSSNView: View {
                         ForEach(1...3, id: \.self) { column in
                             Button(action: { self.onNumpadButtonPress(self.calculateButtonIndex(row, column)) }) {
                                 Text(String(self.calculateButtonIndex(row, column)))
-                                    .foregroundColor(.black)
+                                    .foregroundColor(.white)
                                 .padding()
                                 .background(Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)))
                                 .cornerRadius(5)
@@ -36,7 +36,7 @@ struct SetSSNView: View {
                 HStack {
                     Button(action: onNumpadBackspaceButtonPress) {
                         Image(systemName: "delete.left")
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                         .padding(EdgeInsets(top: 20, leading: 13, bottom: 20, trailing: 13))
                         .background(Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)))
                         .cornerRadius(5)
@@ -44,7 +44,7 @@ struct SetSSNView: View {
                     }
                     Button(action: { self.onNumpadButtonPress(0) }) {
                         Text("0")
-                            .foregroundColor(.black)
+                            .foregroundColor(.white)
                         .padding()
                         .background(Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)))
                         .cornerRadius(5)
@@ -52,7 +52,7 @@ struct SetSSNView: View {
                     }
                     Button(action: onNumpadSetButtonPress) {
                         Image(systemName: "checkmark.circle")
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.white)
                         .padding(EdgeInsets(top: 20, leading: 13, bottom: 20, trailing: 13))
                         .background(Color(UIColor(red: 0, green: 0, blue: 0, alpha: 0.2)))
                         .cornerRadius(5)

@@ -41,7 +41,7 @@ final class MTPApi {
         return String.random(length: 32)
     }
     
-    static func clockInOut(postID: String, SSN: String, onLoad: ([HistoryItem]) -> Void) {
+    static func clockInOut(postID: String, SSN: String, onLoad: @escaping ([HistoryItem]) -> Void) {
         // Clock in or out depending on current state, returns an array with result of previous requests as well as the current one
         let parameters = ClockInOutParameters(postId: postID, SSN: SSN, unitId: -1)
         
@@ -72,9 +72,12 @@ final class MTPApi {
                         name: (try? nameElements[i].html()) ?? "",
                         state: (try? stateElements[i].html()) ?? ""))
                 }
+                
+                onLoad(historyItems)
             } catch {
                 debugPrint("Failed to parse response for clock in/out request")
                 debugPrint(error)
+                onLoad([HistoryItem(time: "0:00", name: "Tókst ekki að stimpla inn/út", state: "")] )
             }
         }
     }

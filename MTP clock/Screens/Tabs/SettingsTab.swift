@@ -10,7 +10,12 @@ import SwiftUI
 
 struct SettingsTab: View {
     @EnvironmentObject var state: AppState
-
+    
+    init()
+    {
+        UITableView.appearance().tableFooterView = UIView()
+    }
+    
     var body: some View {
         NavigationView {
             List {

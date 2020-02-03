@@ -14,7 +14,19 @@ struct SetSSNPage: View {
     
     var body: some View {
         List {
-            TextField("Kennitala", text: $SSNText, onEditingChanged: onSSNTextFieldEditingChanged)
+            ZStack {
+                TextField("Kennitala", text: $SSNText, onEditingChanged: onSSNTextFieldEditingChange)
+                HStack {
+                    Spacer()
+                    if !SSNText.isEmpty {
+                        Button(action: onClearSSNButtonPress) {
+                            Image(systemName: "xmark.circle.fill")
+                                .foregroundColor(.gray)
+                        }
+                    }
+                }
+            }
+            
         }
         .navigationBarTitle("Kennitala")
     }
@@ -22,8 +34,13 @@ struct SetSSNPage: View {
 
 // MARK: Events
 extension SetSSNPage {
-    func onSSNTextFieldEditingChanged(_ changed: Bool) {
+    func onSSNTextFieldEditingChange(_ changed: Bool) {
         state.saveSSN(to: SSNText.isEmpty ? nil : SSNText) // Set to nil if the text field is empty
+    }
+    
+    func onClearSSNButtonPress() {
+        SSNText = ""
+        state.saveSSN(to: nil)
     }
 }
 
